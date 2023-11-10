@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block contenidoQCambia %}
+
+
+<h1>Peliculas agregadas:</h1>
+    <ul>
+    {% for pelicula in peliculas %}
+        <li>{{pelicula.titulo}}</li>
+    {% endfor %}
+    </ul>  
+{% endblock contenidoQCambia %}

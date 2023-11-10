@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block contenidoQCambia %}
+
+
+<h1>Música agregada:</h1>
+<ul>
+{% for musica in musica %}
+    <li>{{musica.titulo}}</li>
+{% endfor %}
+</ul>  
+{% endblock contenidoQCambia %}

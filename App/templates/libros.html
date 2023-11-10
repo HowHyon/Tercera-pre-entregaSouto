@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block contenidoQCambia %}
+
+<h1>Libros agregados:</h1>
+    <ul>
+    {% for libro in libros %}
+        <li>{{libro.titulo}}</li>
+    {% endfor %}
+    </ul>    
+{% endblock contenidoQCambia %}
